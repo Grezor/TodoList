@@ -1,3 +1,7 @@
+
+/**
+ * La méthode document.getElementById () renvoie l'élément de l'ID spécifié.
+ */
 var InputTache = document.getElementById("new-task");
 var AjouterTache = document.querySelector("button");
 var incompleteTache = document.getElementById("incomplete-tasks");
@@ -9,13 +13,14 @@ var completeTache = document.getElementById("completed-tasks");
 function addTasks() {
 
     var taskValue = document.getElementById("new-task").value;
+    // appel la function ajout
     ajout(taskValue);
+    // affiche un message dans la console
     console.log('%c Ajout ', 'background: #222; color: #bada55; font-size:30px;');
 
     // console.log(obj);
     // console.log(jsonObjet);
 }
-AjouterTache.addEventListener("click", addTasks);
 
 /**
  * Supprimer une tache
@@ -43,7 +48,6 @@ function finishTasks(){
     res.send(todolist)
 }
 
-
 function ajout(taskValue) {
     var request = new XMLHttpRequest();
     // requete serveur methode post
@@ -59,23 +63,14 @@ function ajout(taskValue) {
     request.send(JSON.stringify({ name: taskValue }));
 }
 
-
-
-
-/**
- * 
- * CREATION NOUVELLES FONCTION
- * 
- * 
- */
 // Si on appuie sur entrer dans l'input
 function addlistAfterKey(event){
+    // code 13 de la touche entree
     if (inputlength() > 0 && event.which === 13) {
+        // apelle la fonction ajout
         addTasks();
-        
     }
 }
-
 
 function inputlength(){
     return InputTache.value.length;
@@ -87,6 +82,8 @@ function addToucheEnter(){
     }
 }
 
-
 AjouterTache.addEventListener("click", addTasks);
 InputTache.addEventListener("keypress", addlistAfterKey);
+
+// l'input, est apeler a l'événement du clique, et appel function ajout
+AjouterTache.addEventListener("click", addTasks);

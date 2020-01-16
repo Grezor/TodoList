@@ -4,9 +4,14 @@
 }
 
 body {
-  background: #0984e3;
+  background: #2d3436;
   color: #fff;
   font-family: Lato, sans-serif;
+}
+
+.title_secondaire{
+  color: #FFC312;
+  font-size: 20px;
 }
 
 .container {
@@ -219,7 +224,7 @@ ul li.editMode label {
 }
 
 .done{
-  background-color: #34495e;
+  background-color: #009432;
   color: #fff;
 }
 
