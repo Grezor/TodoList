@@ -160,8 +160,6 @@ function validateTodolist(todolist) {
 /**==================================================
  * >>>>>> CONNEXION AU SERVEUR 
 ==================================================*/
-const port = process.env.PORT || 3000;
 
-app.listen(port, hostname, function () {
-  console.log('Example app listening on port ' + port + '!');
-})
+app.set('port', process.env.PORT || 8080);
+app.listen(app.get('port'));
