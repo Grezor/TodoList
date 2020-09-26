@@ -1,19 +1,33 @@
 # Todo List 
 
-## Présentation 
-Suite a ma formation en alternance, mon entreprise ma demandé de réaliser une todoList. Avec les langages Javascript, et NodeJS
-La todoList utilise des API avec le socket Express. Des routes pour ajouter ou supprimer des taches. Mais également de pouvoir éditer 
-une tache, ou de la passer en terminer.
+## Introduction :
+Following my work-linked training, my company asked me to create a todoList. With Javascript and NodeJS languages
+The todoList uses APIs with the Express. Routes to add or remove tasks. But also to be able to edit 
+a stain, or to finish it off.
 
-## Demarrage : 
-Ces instrutions vous permettons de prendre connaissance des pré-requis et d'installer le projet afin de pouvoir développer et tester localement.
+## start : 
+These instructions allow you to familiarise yourself with the pre-requisites and to set up the project in order to be able to develop and test it locally.
 
 ## requis : 
 - Node.js : v14.1.0
 - npm : 6.14.8
 
+# Title :
+## Introduction : 
+# Table of Contents
+* [Technologies](##Technologies)
+* [Lunch](##lunch)
+* [Illustrations](##Illustrations)
+* [Functionalities](##Scopeoffunctionalities)
+* [Project status](##Projectstatus)
 
+## Technologies : 
+## Launch :
+## Illustrations : 
+## Scope of functionalities : 
+## Project status : 
 
+## Other information :
 
 **Duplessi Geoffrey** 
 > GitHub [@Grezor][1]
